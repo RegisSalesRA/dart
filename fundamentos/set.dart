@@ -1,0 +1,20 @@
+void main() {
+  Set<String> persons = <String>{"John", "Doe", "Smith", "Alex", "John"};
+
+  persons.add("Jonnhy");
+  print(persons);
+  print(persons.elementAt(0));
+  print(persons.length);
+  print(persons.contains("John"));
+
+  print(persons.remove("Jonnhy"));
+  print(persons);
+  persons.forEach((element) {
+    print("$element");
+  });
+
+  persons.clear();
+  print(persons);
+  persons.toList();
+  
+}
