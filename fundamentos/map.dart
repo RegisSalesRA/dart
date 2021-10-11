@@ -6,13 +6,13 @@ void main() {
     4: "quarto"
   };
   print(positions);
-  print(positions.keys);
-  print(positions.values);
-  print(positions.length);
-  print(positions.isEmpty);
-  print(positions.isNotEmpty);
+  print(positions.keys); // retorna as chaves do MAP
+  print(positions.values); // retorna os valores do MAP
+  print(positions.length); // retorna a quantidade de itens
+  print(positions.isEmpty); // se é vazia
+  print(positions.isNotEmpty); // se não é vazia
 
-  // Map metodos
+  // Map metodos 
 
   positions.addAll({5: "quinto"});
   print(positions);

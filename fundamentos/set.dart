@@ -5,7 +5,7 @@ void main() {
   print(persons);
   print(persons.elementAt(0));
   print(persons.length);
-  print(persons.contains("John"));
+  print(persons.contains("John")); // contains é s contem um valor john
 
   print(persons.remove("Jonnhy"));
   print(persons);
@@ -16,5 +16,4 @@ void main() {
   persons.clear();
   print(persons);
   persons.toList();
-  
 }
