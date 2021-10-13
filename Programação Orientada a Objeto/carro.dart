@@ -27,7 +27,7 @@ class Carro {
   }
 
   int desacelerar() {
-    if (_velocidadeAtual >= 0) {
+    if (_velocidadeAtual == 0) {
       _velocidadeAtual = 0;
     } else {
       _velocidadeAtual -= 5;
