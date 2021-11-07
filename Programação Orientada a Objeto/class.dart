@@ -12,7 +12,7 @@ class Data {
   }
 */
 
-// Meétodo simples
+// Método construtor simples
   Data(this.dia, this.mes, this.ano) {}
 
 
