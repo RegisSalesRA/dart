@@ -6,11 +6,11 @@ void main() {
     {"nome": "John", "nota": 5.0},
   ];
 
-  var total = alunos
+  var notasFinais = alunos
       .map((alunos) => alunos["nota"])
       .map((nota) => (nota as double).roundToDouble())
       .where((nota) => nota >= 8)
       .reduce((value, element) => value + element);
 
-  print("a média é o valor de ${total / alunos.length}.");
+  print("a média é o valor de ${notasFinais / alunos.length}.");
 }
