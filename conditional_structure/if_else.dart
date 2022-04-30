@@ -5,7 +5,7 @@ void main() {
   print("Nota selecionada foi $nota");
 
   if (nota >= 7) {
-    print("AProvado");
+    print("Aprovado");
   } else if (nota >= 5) {
     print("Recuperação");
   } else {

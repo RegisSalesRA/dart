@@ -1,8 +1,8 @@
-class Carro {
+class Car {
   final int velocidadeMaxima;
   int _velocidadeAtual = 0;
 
-  Carro([this.velocidadeMaxima = 100]);
+  Car([this.velocidadeMaxima = 100]);
 
 
   // getter

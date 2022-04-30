@@ -1,7 +1,7 @@
-import 'carro.dart';
+import 'car.dart';
 
 void main() {
-  var palio_2011 = new Carro(100);
+  var palio_2011 = new Car(100);
 
   while (!palio_2011.estaNoLimite()) {
     print("A velocidade atual é ${palio_2011.acelerar()} Km/h.");

@@ -38,7 +38,7 @@ void main() {
   print(exemplo_lista_string.last); // pega o ultimo item da lista
   exemplo_lista_string.clear(); // limpa toda a lista
   print(exemplo_lista_string.reversed); // reverte a
-  print(exemplo_lista_string.contains("Exemplo 1")) // Confere se contein o iten
+  print(exemplo_lista_string.contains("Exemplo 1")); // Confere se contein o iten
   exemplo_lista_string
       .shuffle(); // colocando os elementos da lista em ordem aleatória
   print(exemplo_lista_string.asMap()); // converte em mapa

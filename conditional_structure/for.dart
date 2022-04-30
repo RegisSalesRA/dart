@@ -1,14 +1,15 @@
 void main() {
+
   // Exemplo com Lista
   for (int a = 0; a < 10; a++) {
-    print('a = $a');
+  print('a = $a');
   }
   print("Fim");
 
   List<double> notas = [12.4, 42.5, 42.1];
 
   for (double nota in notas) {
-    print(nota);
+  print(nota);
   }
 
   //Exemplo com Map
