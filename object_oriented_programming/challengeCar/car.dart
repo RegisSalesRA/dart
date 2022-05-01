@@ -9,7 +9,7 @@ class Car {
   int get velocidadeAtual {
     return this._velocidadeAtual;
   }
-  // setter
+  // setterx  
   void set velocidadeAtual(int novaVelocidade) {
     bool deltaValido = (_velocidadeAtual - novaVelocidade).abs() <= 5;
     if (deltaValido && novaVelocidade >= 0) {

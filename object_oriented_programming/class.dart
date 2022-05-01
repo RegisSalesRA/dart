@@ -1,34 +1,27 @@
-class Data {
-  int? dia;
-  int? mes;
-  int? ano;
+class Food {
+  String? nome;
+  int? preco;
 
 // Metodo construtor completo
 /*
-  Data(int dia,int mes,int ano){
-    this.dia = dia;
-    this.mes = mes;
-    this.ano = ano;
+  Food(String nome, int preco){
+    this.nome = nome;
+    this.preco = preco;
   }
 */
 
-// Método construtor simples
-  Data(this.dia, this.mes, this.ano) {}
+// Método construtor simples com parametros posicionais
+Food(this.preco,this.nome) {}
 
+// Método construtor simples com parametros nomeados
+// Food({this.nome, this.preco});
 
-// Método com paramentros opcioenais
+// Método com paramentros opcionais
+// Food([this.nome,this.preco]) {}
 
-//  Data([this.dia, this.mes, this.ano]) {
-
-//  }
-
- 
 }
 
-
-
 void main() {
-  var dataAniversario = Data(1, 2, 1992);
-
-  print("${dataAniversario.dia}/${dataAniversario.mes}/${dataAniversario.ano}");
+  var fruit = Food(10,"Acabaxi");
+  print("Nome da fruta ${fruit.nome} e o preco ${fruit.preco}");
 }
