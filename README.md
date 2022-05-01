@@ -4,22 +4,17 @@
 ```dart
 This is a simple repository with purpose to review dart codes and structures
 
-there is three files
+there is four files
 
-dart - codes structures
-dart extras - curiosities and using python with other features
-projects - logic projects using pure dart
+dart fundamentals - codes fundamentals structures
+dart conditionals - codes conditionals structures
+dart functions - codes functions structures
+dart object oriented programming - codes OOP codes
 
+each file have a good pratice to write a good code for projects
 ```
 
-## Fast review structures tips
-```dart
-variables always with snakecase
-functions always with snakecase
-class always with camelcase
-```
-
-## Dart Style
+## Dart Guide
 ```dart
 
 guidelines and ways to write your code as best you can
