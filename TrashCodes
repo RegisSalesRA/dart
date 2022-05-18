@@ -1,0 +1,5 @@
+Text(greatPlaces
+                                  .itemByIndex(i)
+                                  .title[0]
+                                  .toUpperCase() +
+                              greatPlaces.itemByIndex(i).title.substring(1)),
