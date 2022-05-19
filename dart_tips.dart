@@ -1,6 +1,6 @@
 ## Fast review structures tips
 ```dart
-variables always with camalcase
+variables always with lowerCamelCase
 functions always with snakecase
 files always with snakecase
 import names prefixes with snakecase
