@@ -19,6 +19,9 @@ void main() {
   // Adicionando e removendo elementos
   exemplo_lista_metodos.add("terceiro");
   exemplo_lista_metodos.remove("terceiro");
+  // Atualizando Objetos e itens na lista
+  exemplo_lista_metodos[0] = "Acabaxi";
+  exemplo_lista_metodos[0] = User("Updated",12); // Caso seja um objeto no caso uma Classe User que vai receber os dados
   // removeAt remove de acordo com a posicao do iten na lista
   exemplo_lista_metodos.removeAt(1);
   exemplo_lista_metodos.removeLast();
