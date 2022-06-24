@@ -1,0 +1,31 @@
+ 
+class User {
+  final String name;
+  final String email;
+  final int numero;
+
+  User(this.name, this.email,this.numero);
+
+  User.fromJson(Map<String, dynamic> json)
+      : name = json['name'],
+  numero = json['numero'],
+        email = json['email'];
+
+  Map<String, dynamic> toJson() => {
+        'name': name,
+        'email': email,
+    'numero': numero,
+      };
+}
+
+void main() {
+  var usuario = User("joaquin","joaquin@gmail.com", 21); print(usuario);
+  var jsonuser = usuario.toJson(); print(jsonuser);
+  var userFrom = User.fromJson(jsonuser); print(userFrom);
+}
+
+// Output
+
+Instance of 'User'
+{name: joaquin, email: joaquin@gmail.com, numero: 21}
+Instance of 'User'
