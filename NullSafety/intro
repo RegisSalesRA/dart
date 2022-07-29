@@ -1,0 +1,8 @@
+
+
+
+
+//
+
+- Operador null AWARE utilizado como um exemplo de ternario em null safety
+String c = cliente ?? "Não encontrado';
