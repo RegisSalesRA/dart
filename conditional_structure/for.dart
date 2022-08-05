@@ -1,17 +1,27 @@
 void main() {
 
   // Exemplo com Lista
-  for (int a = 0; a < 10; a++) {
-  print('a = $a');
+List<String> nomes = [
+  'Jose',
+  'Angelica',
+  'Henrique',
+  'Giovana',
+  'Silvia',
+];
+  
+  Ex 1: for (int i = 0; i < nomes.length; i++){
+    print(nomes[i]);
   }
-  print("Fim");
-
-  List<double> notas = [12.4, 42.5, 42.1];
-
-  for (double nota in notas) {
-  print(nota);
+  Ex 2: for (int i = 0; i <= nomes.length -1; i++){
+    print(nomes[i]);
   }
-
+  Ex 3: for (String nome in nomes){
+    print(nome.toUpperCase());
+  }
+  Ex 4: nomes.forEach((nome){
+    print(nome.toUpperCase());
+  });
+  
   //Exemplo com Map
 
   Map<dynamic, double> notas_dados = {
