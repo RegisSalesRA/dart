@@ -27,11 +27,29 @@ void main() {
   exemplo_lista_metodos.removeLast();
   // Remove no tamanho da range da lista
   exemplo_lista_metodos.removeRange(0, 1);
-
+  // pega um item da lista a partir de uma posição da lista! primeiro parametro inicio o segundo o fim
+  exemplo_lista_metodos.sublist(1);  ||  exemplo_lista_metodos.sublist(1,2)
   print(exemplo_lista_metodos);
-
+  
   // Listas Métodos Sobre a lista
-
+  
+  
+  
+  // preencher uma lista com a quantidade de vezes e o valor 
+  List<String> listString = List.filled(100, 'valor');
+  // result [valor, valor, valor, valor, valor,..]
+  List<int> listInt = List.generate(10, (i) => i + 1);
+  // result [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  
+  List<int> listInt = List.generate(10, (i) => i * 10);
+  
+  print(listInt.any((i) => i % 33 == 0));   // result: true
+  print(listInt.firstWhere((i) => i % 40 ==0)); // result: 0
+  print(listInt.lastWhere((i) => i % 40 ==0)); // result: 80
+  print(listInt.where((i) => i % 20 ==0)); // result: (0,20,40,60,80)
+  
+  
+  
   List<String> exemplo_lista_string = ["Exemplo 1", "Exemplo 2"];
 
   print(exemplo_lista_string.length); // Tamanho da lista
