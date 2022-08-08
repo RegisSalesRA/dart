@@ -1,1 +1,21 @@
-index
+try {
+
+
+int resultado = 100 ~/ 2;
+// ~ usa o tio para uma divisão inteira
+
+print(resultado);
+double valor = double.parse('50.2a');
+print(valor);
+
+// Uso do on para tratar erros especificos
+} on UnsupportedError {
+  print('Caiu aqui!');
+
+} on FormatException catch (error) {
+  print('Caiu no format exception ${error.message}');}
+
+catch(e){
+   print(e);
+ } 
+  print("Final");
