@@ -1,0 +1,9 @@
+void main() {
+  List<String> nomes = [];
+  nomes..add("Régis")..add("Sales")..remove("Sales")..add("Rommel");
+  print(nomes);
+}
+
+List<String> funcao(List<String> lista) {
+return lista..add("Régis")..add("Sales")..remove("Sales")..add("Rommel");
+}
