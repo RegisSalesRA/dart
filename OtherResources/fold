@@ -1,0 +1,46 @@
+
+
+
+// Finding the biggest number (the maximum) in a List
+void main() {
+  final myList = [1, 3, 5, 8, 7, 2, 11];
+  final int result = myList.fold(myList.first, (max, element) {
+    if (max < element) max = element;
+    return max;
+  });
+
+  print(result);
+}
+
+
+// Find the smallest number (the minimum) in a List
+
+
+void main() {
+  final myList = [10, 3, 5, 8, 7, 2, 11];
+  final int result = myList.fold(myList.first, (min, element) {
+    if (min > element) min = element;
+    return min;
+  });
+
+  print(result);
+}
+
+
+
+// Ex maps
+
+
+List<String> valoresInbutidos = ["Maçã", "Acabaxi", "Limão", "Laranja"];
+List<dynamic> valores = ["Cultura", valoresInbutidos];
+
+var valoresBuscados = valores.fold(<dynamic>[] , (list,item){
+  List valoresInbutidosEx = [...valoresInbutidos];
+  list.addAll(valoresInbutidosEx.map((valoresInbutidosEx) => valoresInbutidosEx).toList());
+  return list;
+});
+
+void main() {
+  print(valores);
+  print(valoresBuscados);
+}
