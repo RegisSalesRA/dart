@@ -1,0 +1,43 @@
+  List dateTime = [
+    
+   DateTime.utc(1989, 11, 9), 
+   DateTime.utc(1952, 11, 9), 
+   DateTime.utc(2000, 11, 9), 
+   DateTime.utc(1800, 11, 9),
+      
+  ]; 
+  
+  List usersList = [
+    
+   "Abhishek", 
+   "Raj", 
+   "Rajesh", 
+   "Aakash",
+      
+  ]; 
+  
+  List usersMap = [
+    {
+      "name": "Abhishek",
+      "age": 21,
+    },
+    {
+      "name": "Raj",
+      "age": 22,
+    },
+    {
+      "name": "Rajesh",
+      "age": 23,
+    },
+    {
+      "name": "Aakash",
+      "age": 24,
+    }
+  ];
+  
+  dateTime.sort((a,b) => b.compareTo(a));
+  usersList.sort((a,b) => a.compareTo(b));
+  usersMap.sort((a, b) => a["age"].compareTo(b["age"]));
+  print(dateTime);print(usersList);print(usersMap);
+  
+}
