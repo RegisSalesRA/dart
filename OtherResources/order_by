@@ -41,3 +41,10 @@
   print(dateTime);print(usersList);print(usersMap);
   
 }
+
+
+# Result
+
+[2000-11-09 00:00:00.000Z, 1989-11-09 00:00:00.000Z, 1952-11-09 00:00:00.000Z, 1800-11-09 00:00:00.000Z]
+[Aakash, Abhishek, Raj, Rajesh]
+[{name: Abhishek, age: 21}, {name: Raj, age: 22}, {name: Rajesh, age: 23}, {name: Aakash, age: 24}]
