@@ -1,0 +1,39 @@
+String dataString = '1969-07-20 20:18:04Z';
+String dataString2 = '1800-07-20';
+String dataString3 = '2020-07-20 20:18:04Z';
+
+
+String dataStringAtual = '2020-07-20';
+String dataStringFeito = '2020-07-13';
+
+
+void main() {
+ 
+  final dataTime = DateTime.parse(dataString);
+  final dataTime2 = DateTime.parse(dataString2);
+  final dataTime3 = DateTime.parse(dataString3);
+  print(dataTime); 
+  print(dataTime2); 
+  print(dataTime3);
+ 
+  final dataTimeAtual = DateTime.parse(dataStringAtual);
+  final dataTimeFeito = DateTime.parse(dataStringFeito);
+    
+  
+  print(dataTime.isAfter(dataTime2)); // true 
+  print(dataTime.isBefore(dataTime3)); // false
+  print(dataTime.isAtSameMomentAs(dataTime3)); // true
+  //print(dataTimeAtual.difference(dataTimeFeito)); // true
+  var diferenca = dataTimeAtual.difference(dataTimeFeito).inDays;
+  print(diferenca);
+}
+
+# Result
+
+1969-07-20 20:18:04.000Z
+1800-07-20 00:00:00.000
+2020-07-20 20:18:04.000Z
+true
+true
+false
+7
