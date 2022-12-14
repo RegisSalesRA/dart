@@ -1,0 +1,78 @@
+Basic Assertions
+These assertions are available for all objects.
+
+# Equality
+'Hello'.shouldBeEqualTo('Hello');
+'Hello'.shouldNotBeEqualTo('Word');
+
+# Reference equality
+final me = Person(name: 'Karol');
+final someoneElse = Person(name: 'Karol');
+me.shouldBe(me);
+me.shouldNotBe(someoneElse);
+
+# Subtypes
+const num numberOfGirlsIAttract = 0;
+numberOfGirlsIAttract.shouldBeInstanceOf<int>();
+numberOfGirlsIAttract.shouldNotBeInstanceOf<double>();
+
+# Nullability
+const hello = 'Hello';
+hello.shouldNotBeNull();
+const hello = null;
+hello.shouldBeNull();
+
+# Booleans
+const hasChildren = true;
+hasChildren.shouldBeTrue();
+hasChildren.shouldNotBeFalse();
+const hasChildren = false;
+hasChildren.shouldBeFalse();
+hasChildren.shouldNotBeTrue();
+
+# Numerical Assertions
+2.shouldBeGreaterOrEqualTo(2);
+2.shouldBeGreaterThan(1);
+2.shouldBeLessOrEqualTo(2);
+1.shouldBeLessThan(2);
+1.shouldBePositive();
+1.shouldNotBeNegative();
+(-1).shouldBeNegative();
+(-1).shouldNotBePositive();
+0.shouldBeZero();
+1.shouldNotBeZero();
+0.999.shouldBeNear(1, delta: 0.01);
+0.shouldNotBeInRange(lowerBound: 1, upperBound: 6);
+1.shouldBeInRange(lowerBound: 1, upperBound: 6);
+
+# String Assertions
+'Flutter'.shouldBeEqualToIgnoringCase('FLUTTER');
+'Flutter'.shouldNotBeEqualToIgnoringCase('Xamarin');
+'Flutter rules'.shouldStartWith('Flutter');
+'Flutter rules'.shouldNotStartWith('Xamarin');
+'Flutter rules'.shouldStartWithIgnoringCase('FLUTTER');
+'Flutter rules'.shouldNotStartWithIgnoringCase('Xamarin');
+'I love Flutter'.shouldEndWith('Flutter');
+'I love Flutter'.shouldNotEndWith('Xamarin');
+'I love Flutter'.shouldEndWithIgnoringCase('flutter');
+'I love Flutter'.shouldNotEndWithIgnoringCase('xamarin');
+'I love Flutter'.shouldContain('love');
+'I love Flutter'.shouldNotContain('hate');
+'I love Flutter'.shouldContainIgnoringCase('LOVE');
+'I love Flutter'.shouldNotContainIgnoringCase('HATE');
+'I love Flutter'.shouldContainAll(['Flutter', 'love']);
+'I love Flutter'.shouldContainAllIgnoringCase(['flutter', 'love']);
+'I love Flutter'.shouldContainAllInOrder(['love', 'Flutter']);
+'I love Flutter'.shouldContainAllInOrderIgnoringCase(['Love', 'Flutter']);
+'12345'.shouldMatch(r'\d');
+'Hello'.shouldNotMatch(r'\d');
+''.shouldBeEmpty()
+'name'.shouldNotBeEmpty()
+''.shouldBeNullOrEmpty()
+'name'.shouldNotBeNullOrEmpty()
+' '.shouldBeBlank()
+'name'.shouldNotBeBlank()
+' '.shouldBeNullOrBlank()
+'name'.shouldNotBeNullOrBlank()
+
+
