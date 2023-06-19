@@ -1,0 +1,26 @@
+import 'package:battle_flow/src/domain/interface/entities/event.dart';
+import 'package:battle_flow/src/domain/interface/serializer.dart';
+import 'package:battle_flow/src/domain/interface/serializer_list.dart';
+import 'package:battle_flow/src/model/entities/communication.dart';
+
+abstract class IManagerEventRepository {
+  Future<Communication<T>> getEvent<T extends Event>(
+    String eventId, {
+    required Serializer<T, Map<String, dynamic>> serializer,
+  });
+
+  Future<Communication> saveEvent<T extends Event>({
+    required T event,
+    required Serializer<T, Map<String, dynamic>> serializer,
+    String? eventId,
+  });
+
+  Future<Communication<List<T>>> getEventByOrganization<T extends Event>({
+    String? organizationId,
+    required SerializerList<T, Map<String, dynamic>> serializer,
+  });
+
+  Future<Communication> deleteEvent({
+    required String eventId,
+  });
+}
