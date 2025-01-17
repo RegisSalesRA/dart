@@ -9,16 +9,20 @@ List<String> nomes = [
   'Silvia',
 ];
   
-  Ex 1: for (int i = 0; i < nomes.length; i++){
+  // Ex 1:
+   for (int i = 0; i < nomes.length; i++){
     print(nomes[i]);
   }
-  Ex 2: for (int i = 0; i <= nomes.length -1; i++){
+  // Ex 2:
+  for (int i = 0; i <= nomes.length -1; i++){
     print(nomes[i]);
   }
-  Ex 3: for (String nome in nomes){
+  // Ex 3:
+  for (String nome in nomes){
     print(nome.toUpperCase());
   }
-  Ex 4: nomes.forEach((nome){
+  // Ex 4:
+  nomes.forEach((nome){
     print(nome.toUpperCase());
   });
   
